@@ -1,0 +1,11 @@
+type = "card"
+title = "Awards"
+description = "Honors and awards I have received."
+
+# TODO: 2026年度研究生国家奖学金（预计可获得，正式公示后添加条目）
+
+[[items]]
+title = "MCM/ICM Meritorious Winner"
+subtitle = "Mathematical Contest in Modeling (MCM), Problem D"
+date = "2019"
+content = "Team member of the MCM 2019 Problem D solution — a drone-based disaster relief response system for hurricane-affected Puerto Rico — designated **Meritorious Winner** (with Haiqing Yin and Shuo Han; advisor: Manman Li)."

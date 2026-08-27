@@ -1,0 +1,4 @@
+type = "publication"
+title = "Publications"
+description = "Published, in review, and in preparation. * = joint first author, # = corresponding author."
+source = "publications.bib"

@@ -1,0 +1,69 @@
+type = "card"
+title = "Research"
+description = "Selected research projects, data products, and applied work."
+
+[[items]]
+title = "Pediatric Pneumonia Multimodal Cascade — M.S. Thesis"
+subtitle = "PediatriXlab, Children's Hospital of Chongqing Medical University"
+date = "2025–ongoing"
+content = "A clinically aligned three-stage multimodal cascade for pediatric pneumonia assessment — detection, severity triage, and etiology classification — built on CHCMU pediatric chest X-rays, radiology findings, and structured clinical data, with multimodal fusion, Grad-CAM interpretability, ROC evaluation, and matched ablations. Thesis and manuscript in preparation."
+
+[[items]]
+title = "Controllable Chest X-ray Synthesis for Pediatric Data"
+subtitle = "PediatriXlab (GPU cluster)"
+date = "2026–ongoing"
+content = "Transferring RoentGen-v2 (finely-controllable latent diffusion for radiographs) to in-house pediatric chest X-rays via LoRA adaptation with a clinic-token conditioning branch and image-grounded losses; targets controllable synthesis of rare-condition samples to complement downstream clinical models."
+
+[[items]]
+title = "Pertussis Vaccination Timing and Safety — Chongqing Birth Cohort"
+subtitle = "PediatriXlab, Children's Hospital of Chongqing Medical University"
+date = "2024–2026"
+content = "Linked immunization, disease surveillance, and safety (AEFI) databases for 76,844 infants born in Chongqing; evaluated the real-world effectiveness and safety of 2-month versus 3-month vaccine initiation, and quantified the impact of dosing timeliness. **Output:** first-author paper in *BMC Public Health* (2026)."
+
+[[items]]
+title = "Benchmarking Time-Series Foundation Models for Infectious Disease Surveillance"
+subtitle = "PediatriXlab"
+date = "2025–2026"
+content = "Assembled 289 disease-country time series (70+ diseases, 6 national surveillance systems, 106,234 observations) and evaluated 4 time-series foundation models in zero-shot mode against 5 neural baselines. **Output:** joint first-author paper, in revision at *BMC Public Health*."
+
+[[items]]
+title = "Multicentre Respiratory Outpatient Forecasting — Six Chinese Hospitals"
+subtitle = "PediatriXlab"
+date = "2025–ongoing"
+content = "Weekly outpatient visits for 3 respiratory conditions across six hospitals; a disease-specific TSFM-persistence hybrid compared with clinically interpretable baselines using repeated rolling-origin validation and clinical outcome metrics. Co-first author; manuscript in preparation (working title)."
+
+[[items]]
+title = "PedDialog — Pediatric Consultation Dialogue Dataset"
+subtitle = "PediatriXlab"
+date = "2025–2026"
+content = "Constructed a pediatric consultation dialogue dataset with pediatrician-validated reasoning annotations for clinical-AI development. Submitted to *Scientific Data* (joint first author)."
+
+[[items]]
+title = "Synthetic Tabular Data Generation and Evaluation — Pediatric Records"
+subtitle = "PediatriXlab"
+date = "2026–ongoing"
+content = "Benchmarked SDV-family generative models (copula, CTGAN, TVAE, TabDDPM) with grouped/constrained structures, evaluated via similarity (UMAP), machine-learning utility (hospitalization/ICU prediction), privacy metrics, and ablation studies. Co-first author; manuscript in preparation."
+
+[[items]]
+title = "Sex Differences in Pertussis Risk Trajectory — Birth Cohort"
+subtitle = "PediatriXlab"
+date = "2026–ongoing"
+content = "Follow-up analysis of the Chongqing birth cohort using a target-trial framework to characterize sex differences in pertussis risk across the primary immunization series. Co-first author; manuscript in preparation."
+
+[[items]]
+title = "Commercial Vehicle Auto Insurance Risk Monitoring"
+subtitle = "Ping An Property & Casualty Insurance, Chongqing Branch (Data Analyst)"
+date = "2021–2024"
+content = "Citywide risk monitoring and analysis for commercial vehicle auto insurance; built and maintained the branch data analysis platform."
+
+[[items]]
+title = "Air Pollution and the Demand for Commercial Health Insurance"
+subtitle = "Chongqing University — undergraduate thesis"
+date = "2021"
+content = "Empirical study of how air pollution affects household demand for commercial health insurance, using econometric models with provincial panel data."
+
+[[items]]
+title = "MCM/ICM 2019 Problem D — Drone-Based Disaster Relief System"
+subtitle = "Mathematical Contest in Modeling"
+date = "2019"
+content = "Designed a drone-based disaster relief response system for hurricane-affected Puerto Rico with integer programming, entropy weighting, and fuzzy synthetic decision analysis. Awarded **Meritorious Winner**."

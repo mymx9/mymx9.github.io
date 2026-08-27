@@ -1,0 +1,48 @@
+[site]
+title = "蔡鹏"
+description = "重庆医科大学应用统计硕士生个人主页。"
+last_updated = "2026年8月27日"
+
+[author]
+name = "蔡鹏"
+title = "应用统计硕士生"
+institution = "重庆医科大学"
+
+[social]
+email = "2024121120@stu.cqmu.edu.cn"
+location = "重庆市 · 重庆医科大学附属儿童医院"
+location_details = [
+  "重庆医科大学附属儿童医院 两江院区（原礼嘉分院）",
+  "重庆市两江新区金渝大道 20 号",
+  "邮编：401122"
+]
+
+[[navigation]]
+title = "关于我"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "论文"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "研究"
+type = "page"
+target = "projects"
+href = "/projects"
+
+[[navigation]]
+title = "奖项"
+type = "page"
+target = "awards"
+href = "/awards"
+
+[[navigation]]
+title = "简历"
+type = "page"
+target = "cv"
+href = "/cv"

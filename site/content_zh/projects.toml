@@ -1,0 +1,69 @@
+type = "card"
+title = "研究"
+description = "参与的研究课题、数据产品与应用项目。"
+
+[[items]]
+title = "Pediatric Pneumonia Multimodal Cascade — 硕士学位论文"
+subtitle = "PediatriXlab、重庆医科大学附属儿童医院儿童医学大数据中心"
+date = "2025–在研"
+content = "儿童肺炎的临床对齐三阶段多模态级联：检测—严重度分诊—病因分类，基于 CHCMU 儿科胸片、放射报告与结构化临床数据，采用多模态融合、Grad-CAM 可解释性、ROC 评价与匹配消融。学位论文与论文稿在研。"
+
+[[items]]
+title = "Controllable Chest X-ray Synthesis — 儿科胸片可控合成"
+subtitle = "PediatriXlab（GPU 集群）"
+date = "2026–在研"
+content = "将 RoentGen-v2（面向放射影像的精细可控潜在扩散模型）迁移至医院自有儿科胸片数据：LoRA 微调 + 临床标签 token 条件分支 + 图像对齐损失，面向稀有病种样本的可控合成，服务下游临床模型。"
+
+[[items]]
+title = "Pertussis Vaccination Timing and Safety — 重庆出生队列"
+subtitle = "PediatriXlab、重庆医科大学附属儿童医院儿童医学大数据中心"
+date = "2024–2026"
+content = "链接重庆 76,844 名婴儿的免疫、发病与安全（AEFI）数据库，评估 2 月龄与 3 月龄启动的真实世界有效性与安全性，并量化接种及时性的影响。**产出：** 第一作者论文发表于 *BMC Public Health*（2026）。"
+
+[[items]]
+title = "Benchmarking Time-Series Foundation Models — 多国传染病监测"
+subtitle = "PediatriXlab"
+date = "2025–2026"
+content = "构建 289 个疾病-国家序列（70 余病种、6 国监测系统、106,234 条观测），零样本评估 4 个时序基础模型并对比 5 个神经网络基线。**产出：** 共同第一作者论文，*BMC Public Health* 小修返修中。"
+
+[[items]]
+title = "Multicentre Respiratory Outpatient Forecasting — 六院多中心"
+subtitle = "PediatriXlab"
+date = "2025–在研"
+content = "六家医院 3 种呼吸道感染病种的周度门诊量预测：病种特异 TSFM 与持久性混合模型、同口径基线集、重复滚动起点验证与临床结局指标（绝对病例数减少、高发周改善）。共同第一作者，论文在研（投稿前暂定题）。"
+
+[[items]]
+title = "PedDialog — 儿科问诊对话数据集"
+subtitle = "PediatriXlab"
+date = "2025–2026"
+content = "构建儿科问诊对话数据集并加入儿科医生验证的推理标注，支持儿科临床 AI 发展。已投稿 *Scientific Data*（共同第一作者）。"
+
+[[items]]
+title = "Synthetic Tabular Data — 儿科数据合成与评估"
+subtitle = "PediatriXlab"
+date = "2026–在研"
+content = "基于 SDV 框架（copula、CTGAN、TVAE、TabDDPM）分组约束生成与评估：相似性（UMAP）、机器学习效用（住院/ICU 预测任务）、隐私评估与消融分析。共同第一作者，论文在研。"
+
+[[items]]
+title = "Sex Differences in Pertussis Risk Trajectory — 性别差异队列研究"
+subtitle = "PediatriXlab"
+date = "2026–在研"
+content = "沿用重庆出生队列，采用目标试验模拟框架刻画百日咳风险轨迹的性别差异。共同第一作者，在研。"
+
+[[items]]
+title = "Commercial Vehicle Auto Insurance Risk Monitoring — 车险风险监控"
+subtitle = "中国平安财产保险重庆分公司（数据分析岗）"
+date = "2021–2024"
+content = "负责全市商用车车险风险监控分析，参与分公司数据分析平台建设（含发版、版本控制权限）。"
+
+[[items]]
+title = "空气污染对商业健康险需求的影响研究"
+subtitle = "重庆大学本科毕业论文"
+date = "2021"
+content = "基于省级面板数据的计量分析，研究空气污染对居民商业健康险需求的影响。指导教师：段正敏 副教授。"
+
+[[items]]
+title = "MCM/ICM 2019 Problem D — 无人机灾后救援系统"
+subtitle = "Mathematical Contest in Modeling"
+date = "2019"
+content = "为受飓风影响的波多黎各设计无人机灾后救援系统：整数规划选址、熵权法与模糊综合决策。获 **Meritorious Winner（一等奖）**。"

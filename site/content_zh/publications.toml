@@ -1,0 +1,4 @@
+type = "publication"
+title = "论文"
+description = "已发表、在审与在研论文。* 为共同第一作者，# 为通讯作者。"
+source = "publications.bib"

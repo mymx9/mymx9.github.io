@@ -1,0 +1,11 @@
+type = "card"
+title = "奖项"
+description = "我获得的荣誉与奖项。"
+
+# TODO: 2026年度研究生国家奖学金（预计可获得，正式公示后添加条目）
+
+[[items]]
+title = "2019 年美国大学生数学建模竞赛（MCM/ICM）Meritorious Winner"
+subtitle = "Mathematical Contest in Modeling, Problem D"
+date = "2019"
+content = "2019 年 MCM Problem D（无人机灾后救援系统设计）一等奖，队员：蔡鹏、尹海清、韩硕；指导教师：李曼曼。"
