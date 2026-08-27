@@ -1,0 +1,7 @@
+.env
+files/
+.claude/
+CLAUDE.local.md
+.DS_Store
+.idea/
+Thumbs.db
