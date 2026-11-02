@@ -3,10 +3,10 @@ title = "Research"
 description = "Selected research projects, data products, and applied work."
 
 [[items]]
-title = "Pediatric Pneumonia Multimodal Cascade — M.S. Thesis"
+title = "Multimodal Pediatric Pneumonia Assessment — M.S. Thesis (Ongoing)"
 subtitle = "PediatriXlab, Children's Hospital of Chongqing Medical University"
 date = "2025–ongoing"
-content = "A clinically aligned three-stage multimodal cascade for pediatric pneumonia assessment — detection, severity triage, and etiology classification — built on CHCMU pediatric chest X-rays, radiology findings, and structured clinical data, with multimodal fusion, Grad-CAM interpretability, ROC evaluation, and matched ablations. Thesis and manuscript in preparation."
+content = "M.S. thesis research; not yet completed. Plans to combine pediatric chest X-rays, complete blood counts and available inflammatory markers, and chief-complaint/history-of-present-illness text for pneumonia detection, severity stratification and etiology classification. Architecture, fusion and training strategies will be selected on development data and fixed before independent evaluation.\n\nThe protocol proposes retrospective development and validation, followed by a prospective multicentre comparison with clinicians. Planned analyses include patient-level data splitting, independent temporal validation, robustness to missing variables or modalities, and discrimination, calibration and decision-curve assessment. Inputs will be restricted to information available at presentation, excluding discharge and post-diagnostic documentation to reduce label leakage.\n\nKermany and PediCXR are intended only for external evaluation of image-based pneumonia detection, not the full multimodal system, severity or etiology tasks. The later phase plans blinded comparisons with clinicians of different experience levels using the same case information and an independent expert reference standard. This is a planned diagnostic-accuracy comparison and does not establish improved patient outcomes from AI assistance."
 
 [[items]]
 title = "Controllable Chest X-ray Synthesis for Pediatric Data"

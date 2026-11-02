@@ -3,7 +3,7 @@
 **Chongqing Medical University** — M.S. in Applied Statistics, *2024 – 2027 (expected)*
 - Advisor: Ximing Xu (PediatriXlab, Big Data Center for Children's Medical Care)
 - Research: real-world data methods, infectious-disease time-series forecasting, synthetic data evaluation, medical imaging and multimodal learning
-- M.S. thesis (ongoing): A Clinically-Aligned Three-Stage Multimodal Cascade for Pediatric Pneumonia Assessment
+- M.S. thesis research (ongoing; working topic): multimodal pediatric pneumonia assessment using chest X-rays, laboratory data and clinical text for detection, severity stratification and etiology classification. The protocol plans retrospective development, temporal validation and a later prospective multicentre clinician comparison.
 
 **Chongqing University** — B.S. in Financial Mathematics, School of Mathematics and Statistics, *2017 – 2021*
 - Graduation thesis: *The Impact of Air Pollution on the Demand for Commercial Health Insurance* (advisor: Zhengmin Duan)
