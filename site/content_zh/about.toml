@@ -1,28 +1,5 @@
 type = "about"
 title = "关于我"
-
+application = "我正在申请 2027 年秋季入学的统计学博士项目。"
 [profile]
-research_interests = [
-  "真实世界健康数据与观察性研究",
-  "传染病时间序列预测",
-  "医疗合成数据与模型评价",
-]
-
-[[sections]]
-id = "about"
-type = "markdown"
-source = "bio.md"
-title = "关于我"
-
-[[sections]]
-id = "featured_publications"
-type = "publications"
-title = "代表论文（已发表）"
-filter = "selected"
-limit = 2
-
-[[sections]]
-id = "news"
-type = "list"
-title = "动态"
-source = "news.toml"
+research_interests = ["传染病预测", "疫苗观察性研究", "儿科健康数据"]

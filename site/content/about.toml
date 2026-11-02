@@ -1,28 +1,5 @@
 type = "about"
 title = "About"
-
+application = "I am seeking PhD opportunities in statistics for Fall 2027."
 [profile]
-research_interests = [
-  "Real-world Health Data and Observational Studies",
-  "Infectious Disease Forecasting",
-  "Synthetic Medical Data and Model Evaluation",
-]
-
-[[sections]]
-id = "about"
-type = "markdown"
-source = "bio.md"
-title = "About"
-
-[[sections]]
-id = "featured_publications"
-type = "publications"
-title = "Selected Published Articles"
-filter = "selected"
-limit = 2
-
-[[sections]]
-id = "news"
-type = "list"
-title = "News"
-source = "news.toml"
+research_interests = ["Infectious disease forecasting", "Observational vaccine studies", "Pediatric health data"]

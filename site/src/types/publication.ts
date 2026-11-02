@@ -51,11 +51,15 @@ export interface Publication {
   selected?: boolean;
   preview?: string;
   summary?: string;
+  contribution?: string;
+  research_title?: string;
+  reviewVenue?: string;
   researchArea: ResearchArea;
   description?: string;
 }
 
 export type PublicationType =
+  | 'manuscript'
   | 'journal'
   | 'conference'
   | 'workshop'

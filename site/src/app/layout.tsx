@@ -1,4 +1,7 @@
 import type { Metadata } from 'next';
+import { getPageConfig } from '@/lib/content';
+import LocalizedMetadata, {type PageMetadata} from '@/components/ui/LocalizedMetadata';
+import type {BasePageConfig} from '@/types/page';
 import './globals.css';
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
@@ -23,7 +26,7 @@ export async function generateMetadata(): Promise<Metadata> {
       index: false,
       follow: false,
     },
-    keywords: [config.author.name, 'PhD', 'Research', config.author.institution],
+    keywords: [config.author.name, 'Applied Statistics', 'Research', config.author.institution],
     authors: [{ name: config.author.name }],
     creator: config.author.name,
     publisher: config.author.name,
@@ -106,7 +109,7 @@ function buildLocalizedConfigMaps(
   for (const locale of locales) {
     const localizedConfig = getConfig(locale);
     navigationByLocale[locale] = localizedConfig.navigation;
-    siteTitleByLocale[locale] = localizedConfig.site.title;
+    siteTitleByLocale[locale] = localizedConfig.site.nav_title || localizedConfig.author.name;
     lastUpdatedByLocale[locale] = localizedConfig.site.last_updated;
   }
 
@@ -132,6 +135,15 @@ export default function RootLayout({
     lastUpdatedByLocale,
   } = buildLocalizedConfigMaps(targetLocales);
 
+  const localizedPages: Record<string, Record<string,PageMetadata>> = {};
+  for (const locale of targetLocales) {
+    const localized = getConfig(locale);
+    localizedPages[locale] = {'/': {title: localized.site.title, description: localized.site.description}};
+    for (const slug of ['publications', 'projects', 'cv', 'awards']) {
+      const page = getPageConfig<BasePageConfig>(slug, locale);
+      if (page) localizedPages[locale][`/${slug}`] = {title: `${page.title} | ${localized.site.title}`, description: page.description || localized.site.description};
+    }
+  }
   return (
     <html lang={runtimeI18n.defaultLocale} className="scroll-smooth" suppressHydrationWarning>
       <head>
@@ -162,18 +174,20 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-sans antialiased">
+      <body>
+        <a className="skip-link" href="#main-content">Skip to content / 跳至正文</a>
         <ThemeProvider>
           <LocaleProvider config={runtimeI18n}>
+            <LocalizedMetadata pages={localizedPages}/>
             <Navigation
               items={config.navigation}
-              siteTitle={config.site.title}
+              siteTitle={config.site.nav_title || config.author.name}
               enableOnePageMode={config.features.enable_one_page_mode}
               i18n={runtimeI18n}
               itemsByLocale={navigationByLocale}
               siteTitleByLocale={siteTitleByLocale}
             />
-            <main className="min-h-screen pt-16 lg:pt-20">
+            <main id="main-content" tabIndex={-1}>
               {children}
             </main>
             <Footer

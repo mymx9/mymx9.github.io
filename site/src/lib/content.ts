@@ -28,7 +28,7 @@ function readFirstAvailableFile(filename: string, locale?: string): string {
       return fs.readFileSync(filePath, 'utf-8');
     } catch (error) {
       if ((error as NodeJS.ErrnoException).code !== 'ENOENT') {
-        console.error(`Error loading file ${filePath}:`, error);
+        throw new Error(`Cannot read ${filePath}: ${error}`);
       }
     }
   }
@@ -39,7 +39,7 @@ function readFirstAvailableFile(filename: string, locale?: string): string {
     console.warn(`Missing file \"${filename}\" in content/.`);
   }
 
-  return '';
+  throw new Error(`Required content file missing: ${filename}`);
 }
 
 export function getMarkdownContent(filename: string, locale?: string): string {
@@ -59,8 +59,7 @@ export function getTomlContent<T>(filename: string, locale?: string): T | null {
   try {
     return parse(content) as unknown as T;
   } catch (error) {
-    console.error(`Error parsing TOML file ${filename}:`, error);
-    return null;
+    throw new Error(`Invalid TOML in ${filename}: ${error}`);
   }
 }
 

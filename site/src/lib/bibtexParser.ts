@@ -16,8 +16,8 @@ const typeMapping: Record<string, PublicationType> = {
   phdthesis: 'thesis',
   mastersthesis: 'thesis',
   techreport: 'technical-report',
-  unpublished: 'preprint',
-  misc: 'preprint',
+  unpublished: 'manuscript',
+  misc: 'manuscript',
 };
 
 // Convert month names to numbers
@@ -36,10 +36,11 @@ const monthMapping: Record<string, number> = {
   dec: 12, december: 12,
 };
 
-// Older entries without an explicit status retain the published default.
+// Invalid status must fail the build rather than imply publication.
 function parsePublicationStatus(value?: string): PublicationStatus {
   const statuses: PublicationStatus[] = ['published', 'accepted', 'under-review', 'submitted', 'in-preparation', 'draft'];
-  return statuses.includes(value as PublicationStatus) ? value as PublicationStatus : 'published';
+  if (!statuses.includes(value as PublicationStatus)) throw new Error(`Missing or invalid publication status: ${value}`);
+  return value as PublicationStatus;
 }
 
 export function parseBibTeX(bibtexContent: string, locale?: string): Publication[] {
@@ -53,7 +54,9 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
     const authors = parseAuthors(tags.author || '', highlightNames);
 
     // Parse year and month
-    const year = parseInt(tags.year) || new Date().getFullYear();
+    const year = Number(tags.year);
+    if (!Number.isInteger(year) || year < 1900) throw new Error(`Invalid publication year: ${entry.citationKey}`);
+    if (!tags.title || !tags.author) throw new Error(`Missing title or authors: ${entry.citationKey}`);
     const monthStr = tags.month?.toLowerCase() || '';
     const month = monthMapping[monthStr] || (parseInt(monthStr) || undefined);
 
@@ -86,6 +89,7 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
 
       // Optional fields
       journal: cleanBibTeXString(tags.journal),
+      reviewVenue: cleanBibTeXString(tags.review_venue),
       conference: cleanBibTeXString(tags.booktitle),
       volume: tags.volume,
       issue: tags.number,
@@ -100,7 +104,7 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       preview,
 
       // Store original BibTeX (excluding custom fields)
-      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'status', 'summary']),
+      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'status', 'summary', 'abstract', 'review_venue']),
     };
 
     // Clean up undefined fields

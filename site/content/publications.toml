@@ -1,4 +1,19 @@
 type = "publication"
 title = "Publications"
-description = "Articles and manuscripts grouped by publication status. * = joint first author, # = corresponding author."
+description = "Published articles and manuscripts under review."
 source = "publications.bib"
+
+[entries.cai2026tsfm]
+research_title = "Multi-country benchmark of time series foundation models"
+summary = "Evaluating zero-shot time series foundation models across infectious disease surveillance series from six countries."
+contribution = "Collected and analysed the data jointly with the other co-first author, and contributed to study design, methodology and the first draft."
+
+[entries.cai2026pertussis]
+research_title = "Pertussis vaccination timing and safety"
+summary = "A birth-cohort study of pertussis vaccination initiation, dosing timeliness and safety."
+contribution = "Led the analysis using data provided by collaborating disease control authorities, and contributed to study design, methodology and the first draft."
+
+[entries.cai2026pedialog]
+research_title = "PedDialog: pediatric consultation dialogues"
+summary = "A pediatric consultation dataset with model-generated reasoning annotations reviewed by pediatricians."
+contribution = "Led the analysis and contributed to data curation, software and model development, validation and the first draft."

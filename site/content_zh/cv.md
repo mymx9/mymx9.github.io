@@ -1,43 +1,23 @@
 ## 教育背景
 
-**重庆医科大学** — 应用统计硕士，*2024－2027（预计毕业）*
-- 导师：徐铣明（PediatriXlab、重庆医科大学附属儿童医院儿童医学大数据中心）
-- 研究方向：真实世界数据方法、传染病时序预测、合成数据评估、医学影像与多模态学习
-- 硕士学位论文研究（在研，主题暂述）：融合胸片、检验与临床文本的儿童肺炎多任务评估（识别、严重程度分层与病因分类）；按 protocol 计划开展回顾性开发、时间验证及后续前瞻性多中心医生对照。
+**重庆医科大学** · 应用统计硕士研究生，2024–2027（预计毕业）\
+导师：徐铣明。研究方向为传染病预测、疫苗观察性研究与儿科健康数据建模。
 
-**重庆大学** — 金融数学学士，数学与统计学院，*2017－2021*
-- 毕业论文：《空气污染对商业健康险需求的影响研究》（指导教师：段正敏 副教授）
+**重庆大学** · 金融数学学士，2017–2021
+
+## 研究经历
+
+在重庆医科大学附属儿童医院儿童医学大数据中心开展研究，主导相关项目的分析工作。研究内容和个人贡献见[研究页](/projects/)，论文及发表状态见[论文页](/publications/)。
 
 ## 工作经历
 
-**中国平安财产保险股份有限公司重庆分公司** — 数据分析岗，车险部，*2021－2024*
-- 负责全市商用车车险风险监控分析
-- 参与分公司数据分析平台建设（含发版、版本控制权限）
-
-## 论文
-
-### 已发表
-
-- **Cai P\***、He X\* 等. Effectiveness and safety of 2-month versus 3-month pertussis vaccination initiation and the impact of dosing timeliness: a population-based birth cohort study in China. — *BMC Public Health* **26**, 1580 (2026). [DOI](https://doi.org/10.1186/s12889-026-27239-x)
-- **Cai P\***、Huang G\*、Xu X\#. Benchmarking time series foundation models for multi-country infectious disease forecasting: a retrospective evaluation across over 70 diseases. — *BMC Public Health* (2026), 2026-10-14 在线发表，Article in Press. [DOI](https://doi.org/10.1186/s12889-026-29918-1)
-### 审稿中
-
-- **Cai P\***、Wei Q\* 等. 儿科医生验证推理标注的儿科问诊对话数据集 — *Scientific Data*（审稿中）
-### 在研
-
-- 冻结时序基础模型的共享残差适配与区间评价：儿童医院呼吸道感染预测（共同第一作者，稿件在研）。
-- 婴儿百日咳发病率的性别差异：时变接种阶段、拟泊松回归及交互分析（共同第一作者，稿件在研）。
-- 儿科表格数据合成与评价（共同第一作者，稿件在研）。
-
-\* 共同第一作者；# 通讯作者。
+**平安财险重庆分公司** · 数据分析岗，2021–2024\
+从事商用车保险风险监控与数据分析。
 
 ## 获奖
 
-- **2019 年 MCM/ICM Meritorious Winner**（Problem D）
+2019 年美国大学生数学建模竞赛（MCM/ICM），Meritorious Winner。
 
-## 技能
+## 方法与工具
 
-- **统计方法**：真实世界/观察性数据的因果推断、队列与生存分析、时间序列建模与预测、行政数据库的链接与清洗
-- **机器学习**：时序基础模型（TimesFM、Moirai、Chronos、TimeMoE）、表格数据生成模型（copula、CTGAN、TVAE、TabDDPM）、基准测试与消融实验设计
-- **工具**：R、Python（pandas、scikit-learn、PyTorch、SDV）、SQL、Git、LaTeX
-- **语言**：中文（母语）、英语（学术写作与报告）
+观察性队列分析、回归与交互分析、时间序列预测及模型评价。使用 R、Python、SQL、Git 与 LaTeX。

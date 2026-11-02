@@ -1,46 +1,24 @@
 'use client';
-
 import PublicationsList from '@/components/publications/PublicationsList';
-import TextPage from '@/components/pages/TextPage';
-import CardPage from '@/components/pages/CardPage';
-import { Publication } from '@/types/publication';
-import {
-  PublicationPageConfig,
-  TextPageConfig,
-  CardPageConfig,
-} from '@/types/page';
+import TextPage from './TextPage';
+import CardPage from './CardPage';
+import ResearchPage from './ResearchPage';
+import type { Publication } from '@/types/publication';
+import type { SiteConfig } from '@/lib/config';
+import type { PublicationPageConfig, TextPageConfig, CardPageConfig, ResearchPageConfig } from '@/types/page';
 import { useLocaleStore } from '@/lib/stores/localeStore';
-
 export type DynamicPageLocaleData =
-  | { type: 'publication'; config: PublicationPageConfig; publications: Publication[] }
-  | { type: 'text'; config: TextPageConfig; content: string }
-  | { type: 'card'; config: CardPageConfig };
-
-interface DynamicPageClientProps {
-  dataByLocale: Record<string, DynamicPageLocaleData>;
-  defaultLocale: string;
-}
-
-export default function DynamicPageClient({ dataByLocale, defaultLocale }: DynamicPageClientProps) {
-  const locale = useLocaleStore((state) => state.locale);
-  const fallback = dataByLocale[defaultLocale] || Object.values(dataByLocale)[0];
-  const pageData = dataByLocale[locale] || fallback;
-
-  if (!pageData) {
-    return null;
-  }
-
-  return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      {pageData.type === 'publication' && (
-        <PublicationsList config={pageData.config} publications={pageData.publications} />
-      )}
-      {pageData.type === 'text' && (
-        <TextPage config={pageData.config} content={pageData.content} />
-      )}
-      {pageData.type === 'card' && (
-        <CardPage config={pageData.config} />
-      )}
-    </div>
-  );
+ | {type: 'publication'; config: PublicationPageConfig; publications: Publication[]}
+ | {type: 'research'; config: ResearchPageConfig}
+ | {type: 'text'; config: TextPageConfig; content: string; author: SiteConfig['author']; email?: string}
+ | {type: 'card'; config: CardPageConfig};
+export default function DynamicPageClient({dataByLocale, defaultLocale}: {dataByLocale: Record<string, DynamicPageLocaleData>; defaultLocale: string}) {
+  const locale = useLocaleStore(s => s.locale);
+  const page = dataByLocale[locale] || dataByLocale[defaultLocale];
+  return <div className="page-shell">
+    {page.type === 'publication' && <PublicationsList config={page.config} publications={page.publications}/>}
+    {page.type === 'research' && <ResearchPage config={page.config}/>}
+    {page.type === 'text' && <TextPage {...page}/>}
+    {page.type === 'card' && <CardPage config={page.config}/>}
+  </div>;
 }

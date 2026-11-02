@@ -1,5 +1,4 @@
 @article{cai2026pertussis,
-  summary = {A linked birth-cohort study in Chongqing examining pertussis vaccination initiation age, dosing timeliness, and safety.},
   status = {published},
   selected={true},
   title = {Effectiveness and safety of 2-month versus 3-month pertussis vaccination initiation and the impact of dosing timeliness: a population-based birth cohort study in China},
@@ -10,14 +9,9 @@
   pages = {1580},
   doi = {10.1186/s12889-026-27239-x},
   month = {apr},
-  urldate = {2026-11-02},
-  abstract = {Linked immunisation, disease surveillance and AEFI records were used to compare pertussis vaccination initiation at 2 versus 3 months in a retrospective Chongqing birth cohort. There were 76,844 eligible infants and 69,612 in the effectiveness comparison. Incidence across dose-specific post-vaccination risk windows was 6.99 versus 6.80 per 1,000 person-years, with no statistically significant difference. Timely inter-dose intervals were associated with lower incidence; residual confounding and passive safety surveillance limit interpretation.},
-  description={Joint first author. Published 6 April 2026. Linked immunisation, surveillance and AEFI records for 76,844 eligible infants; 69,612 entered the effectiveness comparison. Incidence across dose-specific post-vaccination risk windows was 6.99 versus 6.80 per 1,000 person-years for 2- versus 3-month initiation, with no statistically significant difference. Timely intervals were associated with lower incidence (3.99 versus 10.66 per 1,000 person-years); residual confounding remains possible.},
-  keywords={Pertussis, Vaccine Effectiveness, Birth Cohort, Real-World Data, Health Policy}
 }
 
 @article{cai2026tsfm,
-  summary = {A six-country benchmark of zero-shot time series foundation models and neural baselines across 289 disease-country series and multiple forecasting horizons.},
   status = {published},
   selected={true},
   title = {Benchmarking time series foundation models for multi-country infectious disease forecasting: a retrospective evaluation across over 70 diseases},
@@ -26,42 +20,14 @@
   journal = {BMC Public Health},
   month = {oct},
   doi = {10.1186/s12889-026-29918-1},
-  urldate = {2026-11-02},
   note = {Published online 14 October 2026 (Article in Press)},
-  abstract = {A retrospective benchmark of 289 disease-country series spanning over 70 diseases and 106,234 observations from six national surveillance systems compared four zero-shot TSFM families with five neural baselines and naive and seasonal naive references. A TSFM variant had the lowest observed error in 30 of 36 country-horizon-metric settings, a descriptive ranking rather than statistical superiority. Each series was evaluated over one held-out year; neural baselines used fixed configurations without disease-specific tuning.},
-  description={Joint first author. Published online 14 October 2026. Six countries, 70+ diseases, 289 disease-country series and 106,234 observations; four zero-shot TSFM families compared with five neural baselines and naive/seasonal naive references. A TSFM variant had the lowest observed error in 30 of 36 country-horizon-metric settings (descriptive rankings, not statistical superiority). Evaluation used one held-out year per series and neural baselines without disease-specific tuning.},
-  keywords={Time Series Foundation Models, Infectious Disease Surveillance, Forecasting}
 }
 
-@article{cai2026pedialog,
+@unpublished{cai2026pedialog,
   status = {under-review},
   title = {A Pediatric Consultation Dialogue Dataset with Pediatrician-Validated Reasoning Annotations},
   author = {Peng Cai* and Qiuhong Wei* and Jiacheng Li and Danyang Zhang and Chunlan Qiu# and Li Xiao# and Ximing Xu#},
   year = {2026},
-  journal = {Scientific Data},
-  note = {Under review at Scientific Data},
-  abstract = {PedDialog is a dataset of multi-turn pediatric consultations with multi-stage de-identification. Each physician response is paired with LLM-generated reasoning reviewed by pediatricians. English translations are checked by reviewers with medical training. The resource supports pediatric dialogue modelling and controlled studies of reasoning-aware training data; annotations do not represent physicians' actual internal thought processes.},
-  description={Joint first author. Under review at Scientific Data. Multi-turn pediatrician-caregiver consultations, cleaned and de-identified through a multi-stage process. Each physician response is paired with LLM-generated reasoning reviewed by pediatricians, with human-verified English translations. Annotations explain plausible clinical rationales rather than physicians' actual internal thought processes.},
-  keywords={Pediatric Dialogue, Dataset, Reasoning Annotations}
-}
-
-@misc{cai2026sexdiff,
-  status = {in-preparation},
-  title = {Sex Differences in Infant Pertussis Incidence Across the Primary Immunization Series in China},
-  year = {2026},
-  note = {Manuscript in preparation (not yet submitted)},
-  abstract = {A registry-based infant cohort study linking immunisation and pertussis surveillance data in Chongqing. Time-updated vaccination stages and quasi-Poisson regression assess sex-by-stage interaction, stage-specific male-to-female incidence rate ratios and ratios of rate ratios. Sensitivity analyses address post-dose lags, outcome definition, adjustment and cohort eligibility. The observational analysis does not isolate vaccination effects from maturation.},
-  description={Joint first author; manuscript in preparation. Links Chongqing immunisation registry and pertussis surveillance records, splitting follow-up from birth into time-updated vaccination stages with a post-dose immune-response lag. Quasi-Poisson regression with infant-clustered robust standard errors adjusts for age, calendar month, region and first-dose vaccine product. Sex-by-stage interaction tests, stage-specific incidence rate ratios and ratios of rate ratios characterise sex disparities. Sensitivity analyses vary post-dose lags, geographic adjustment, inpatient diagnosis outcomes and cohort eligibility. The study describes stage-specific disparities; it does not separate vaccination from maturation, estimate vaccine effectiveness or establish equivalence between sexes at later stages.},
-  keywords={Pertussis, Sex Differences, Registry-Based Cohort, Time-Varying Exposure, Quasi-Poisson Regression}
-}
-
-@article{cai2026multicentre,
-  status = {in-preparation},
-  title = {Local residual adaptation of frozen time-series foundation models for infectious disease forecasting across children’s hospitals},
-  year = {2026},
-  journal = {In preparation},
-  note = {Manuscript in preparation (not yet submitted)},
-  abstract = {A retrospective evaluation of local residual adaptation for frozen time-series foundation models in pediatric hospital surveillance. Pooled LightGBM residual correction and Gaussian-process prediction intervals are assessed using conventional references, matched ablations, leave-one-city-out validation and interval reliability measures. Evaluation distinguishes aggregate forecast accuracy, local failures and the unproven clinical utility of forecasts.},
-  description={Joint first author; manuscript in preparation. Investigates one-week-ahead respiratory infection forecasting in children’s hospitals using frozen Chronos-2 and Moirai-2 backbones, a pooled LightGBM residual adapter for point forecasts, and Gaussian-process error-scale estimates for prediction intervals. Compares configurations with and without weather and holiday covariates against conventional forecasting references. Matched ablations, leave-one-city-out validation, coverage, interval width and weighted interval scores assess adaptation, cross-hospital transfer and local failures. This retrospective evaluation concerns hospital-recorded cases rather than population incidence; transfer is assessed within the same evaluation period, and clinical benefit or an automatic correction policy is not established.},
-  keywords={Time Series Foundation Models, Residual Adaptation, Gaussian Processes, Pediatric Surveillance, Forecast Evaluation}
+  review_venue = {Scientific Data},
+  note = {Manuscript under review},
 }

@@ -1,69 +1,50 @@
-type = "card"
+type = "research"
 title = "研究"
-description = "参与的研究课题、数据产品与应用项目。"
+description = "以传染病和儿科健康数据为基础，连接观察性研究、预测与模型评价。"
 
-[[items]]
-title = "Pediatric Pneumonia Multimodal Assessment — 硕士学位论文（在研）"
-subtitle = "PediatriXlab、重庆医科大学附属儿童医院儿童医学大数据中心"
-date = "2025–在研"
-content = "硕士学位论文研究，尚未完成。拟融合儿童胸部 X 光、血常规指标及可用的炎症指标、主诉与现病史文本，围绕肺炎识别、严重程度分层和病因分类开展多任务建模。具体模型架构、融合方式与训练策略将在开发数据上选择，并在独立评价前固定。\n\n研究计划分为回顾性开发验证与后续前瞻性多中心医生对照两个阶段。拟采用患者层面的数据划分、独立时间验证，评估缺失变量或模态下的稳健性，并以判别、校准和决策曲线等指标评价模型。输入将限于就诊时可用的临床信息，排除出院后或诊断后文书，以降低标签泄漏风险。\n\nKermany 与 PediCXR 公共数据拟仅用于影像分支的肺炎识别评价，不能验证完整多模态系统、严重程度或病因分类。后续计划采用独立专家参考标准，在相同病例资料下盲法比较模型与不同资历医生的判断；该方案属于诊断准确性比较，尚不能证明 AI 辅助改善患者结局。"
+[[themes]]
+id = "forecasting"
+title = "传染病预测与模型评价"
+question = "预测模型在不同监测环境下是否可靠？"
+overview = "从多国公共监测数据的基准评价出发，我进一步研究基础模型在儿童医院场景中的适配，关注点预测表现、预测区间和跨院迁移。"
 
-[[items]]
-title = "Controllable Chest X-ray Synthesis — 儿科胸片可控合成"
-subtitle = "PediatriXlab（GPU 集群）"
-date = "2026–在研"
-content = "将 RoentGen-v2（面向放射影像的精细可控潜在扩散模型）迁移至医院自有儿科胸片数据：LoRA 微调 + 临床标签 token 条件分支 + 图像对齐损失，面向稀有病种样本的可控合成，服务下游临床模型。"
+[[themes.works]]
+publication_id = "cai2026tsfm"
 
-[[items]]
-title = "Pertussis Vaccination Timing and Safety — 重庆出生队列"
-subtitle = "PediatriXlab、重庆医科大学附属儿童医院儿童医学大数据中心"
-date = "2024–2026"
-content = "基于免疫、发病与 AEFI 数据链接的重庆回顾性出生队列，纳入 76,844 名符合条件婴儿，有效性比较包含 69,612 名。比较 2 与 3 月龄启动的接种后发病率与安全性，并评估接种间隔及时性；未观察到启动组间发病率的显著差异，准时间隔与较低风险相关。**产出：** 共同第一作者论文，发表于 *BMC Public Health*（2026-04-06），[DOI](https://doi.org/10.1186/s12889-026-27239-x)。"
+[[themes.works]]
+id = "residual-adaptation"
+title = "儿童医院传染病预测的残差适配"
+status = "稿件准备中"
+summary = "研究冻结时序基础模型的局部残差修正与区间估计，通过回顾性评价考察提前一周预测的准确性和可靠性。"
+contribution = "主导预测建模与模型评价。"
 
-[[items]]
-title = "Benchmarking Time-Series Foundation Models — 多国传染病监测"
-subtitle = "PediatriXlab"
-date = "2025–2026"
-content = "构建 6 国、70 余病种的 289 个疾病-国家序列（106,234 条周度或月度观测），比较 4 类零样本 TSFM、5 个神经网络基线及朴素/季节朴素参考模型，覆盖单步、中期与长期预测。评价点预测误差及 Moirai 区间预测；结论限于每序列一个留出年的测试期。**产出：** 共同第一作者论文，2026-10-14 在线发表于 *BMC Public Health*（Article in Press），[DOI](https://doi.org/10.1186/s12889-026-29918-1)。"
+[[themes]]
+id = "vaccine-studies"
+title = "疫苗与传染病的观察性研究"
+question = "接种时序与人群差异如何关联疾病风险？"
+overview = "与疾控部门合作，利用免疫登记和疾病监测资料研究婴儿百日咳风险，关注接种时序、随访阶段和人群异质性。"
 
-[[items]]
-title = "Frozen TSFM Residual Adaptation — 儿童医院呼吸道预测"
-subtitle = "PediatriXlab"
-date = "2025–在研"
-content = "共同第一作者，稿件在研。研究儿童医院呼吸道感染的单周前瞻预测，在冻结 Chronos-2 与 Moirai-2 权重的基础上，使用共享 LightGBM 残差适配器修正点预测，并以高斯过程估计误差尺度、构建预测区间。比较有无天气与节假日协变量的配置及常规预测基线，结合匹配消融、留一城市验证和覆盖率、区间宽度与加权区间评分，评价适配效果、跨院迁移与局部失效。研究属于回顾性预测评价；医院记录病例数不等于人群发病率，留一城市验证仍处于同一评价时段，尚不能推断临床效益或支持自动校正策略。"
+[[themes.works]]
+publication_id = "cai2026pertussis"
 
-[[items]]
-title = "PedDialog — 儿科问诊对话数据集"
-subtitle = "PediatriXlab"
-date = "2025–2026"
-content = "共同第一作者。Scientific Data 审稿中。儿科医生与照护者的多轮问诊对话数据集，经过清洗与多阶段去标识化；每条医生回复配有语言模型生成、儿科医生审核的推理标注，并提供经人工核验的英文译文。标注解释回复的临床依据，不代表医生真实的内部思维过程。"
+[[themes.works]]
+id = "sex-differences"
+title = "基础免疫阶段的婴儿百日咳性别差异"
+status = "稿件准备中"
+summary = "利用时变接种阶段与交互分析，研究男女婴儿发病率差异随随访阶段的变化，评价观察性关联及其稳健性。"
+contribution = "主导统计分析，包括时变接种阶段建模、交互分析与敏感性分析。"
 
-[[items]]
-title = "Synthetic Tabular Data — 儿科数据合成与评估"
-subtitle = "PediatriXlab"
-date = "2026–在研"
-content = "基于 SDV 框架（copula、CTGAN、TVAE、TabDDPM）分组约束生成与评估：相似性（UMAP）、机器学习效用（住院/ICU 预测任务）、隐私评估与消融分析。共同第一作者，论文在研。"
+[[themes]]
+id = "pediatric-data"
+title = "儿科多模态与临床数据研究"
+question = "如何组织和评价不同形式的儿科临床信息？"
+overview = "围绕影像、检验、临床文本与问诊对话，研究儿科数据的组织、建模和评价。"
 
-[[items]]
-title = "Sex Differences in Infant Pertussis — 基础免疫阶段队列研究"
-subtitle = "PediatriXlab"
-date = "2026–在研"
-content = "共同第一作者，稿件在研。链接重庆免疫登记与百日咳监测资料，将婴儿自出生起的人时按接种阶段动态划分，并设置接种后免疫形成滞后。采用拟泊松回归与婴儿层面聚类稳健标准误，调整年龄、日历月、地区和首剂疫苗产品，通过性别×接种阶段交互检验、阶段特异发病率比及比值之比刻画男女差异。敏感性分析涵盖不同接种后滞后、地区调整、住院诊断结局和入组条件。研究描述阶段特异的性别差异，不能分离接种与年龄成熟效应，也不估计疫苗有效性或证明后期男女等效。"
+[[themes.works]]
+id = "masters-thesis"
+title = "儿童肺炎的多模态评估"
+status = "硕士学位论文 · 在研"
+summary = "拟融合胸片、检验与临床文本，研究肺炎识别、严重程度分层和病因分类，重点评价模型的判别、校准与缺失模态下的稳健性。"
 
-[[items]]
-title = "Commercial Vehicle Auto Insurance Risk Monitoring — 车险风险监控"
-subtitle = "中国平安财产保险重庆分公司（数据分析岗）"
-date = "2021–2024"
-content = "负责全市商用车车险风险监控分析，参与分公司数据分析平台建设（含发版、版本控制权限）。"
-
-[[items]]
-title = "空气污染对商业健康险需求的影响研究"
-subtitle = "重庆大学本科毕业论文"
-date = "2021"
-content = "基于省级面板数据的计量分析，研究空气污染对居民商业健康险需求的影响。指导教师：段正敏 副教授。"
-
-[[items]]
-title = "MCM/ICM 2019 Problem D — 无人机灾后救援系统"
-subtitle = "Mathematical Contest in Modeling"
-date = "2019"
-content = "为受飓风影响的波多黎各设计无人机灾后救援系统：整数规划选址、熵权法与模糊综合决策。获 **Meritorious Winner（一等奖）**。"
+[[themes.works]]
+publication_id = "cai2026pedialog"

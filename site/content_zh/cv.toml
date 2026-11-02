@@ -1,3 +1,6 @@
 type = "text"
 title = "简历"
+description = "教育与经历概览"
 source = "cv.md"
+# Optional independent PDF. Set a local /filename.pdf or an https:// URL when ready.
+# pdf_url = "/cv.pdf"

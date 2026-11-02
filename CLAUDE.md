@@ -31,11 +31,14 @@ cd site/out && python3 -m http.server 8000
 
 ## 内容约定（重要）
 
-- **出版物按语言拆分**：`site/content/publications.bib`（英文描述）+ `site/content_zh/publications.bib`（中文描述）。PRISM 按 locale 优先读取 `content_zh/` 再回退 `content/`。不要合并为单一共享 bib（会导致英文界面混入中文）。
+- **出版物事实集中维护**：`site/content/publications.bib` 保存正式题名、作者、DOI、日期和显式状态；不得写入展示摘要。中英文 `publications.toml` 的 `entries.<citationKey>` 分别维护 `summary`、`research_title` 和 `contribution`。研究页通过 `publication_id` 引用论文，禁止复制维护第二套作者、题名或状态。此结构已按用户要求取代双语 BibTeX 副本。
+- **页面分工**：首页为身份、简介与两篇代表成果；研究页按三条主题组织研究问题、当前工作和贡献；论文页为已发表与在审记录；CV 为简短经历概览。独立 PDF 通过各语言 `cv.toml` 的可选 `pdf_url` 接入，缺省时隐藏下载入口。
+- **展示范围**：暂不展示胸片合成和未定型表格合成项目。本科与工作经历仅在 CV 简述。不要将尚未投稿的工作标为预印本或在论文页生成引用。
 - **TOML 陷阱**：双引号字符串内禁止 `\*` 等非标准转义——非法转义会使整个 TOML 解析失败，页面在构建时静默变成 notFound（症状：页面 `noindex` 且无内容）。改为 `*`。
-- **论文状态词严格**：已发表（含 DOI）/ 已接收 / 在审（注明轮次与进度）/ 在投 / 在研，禁止在接收前写成"已接收"。
+- **论文状态词严格**：已发表（含 DOI）/ 已接收 / 在审 / 已投稿 / 在研；不公开内部审稿轮次与进度，禁止在接收前写成"已接收"。
 - bib 作者字段：`*` = 共同第一作者，`#` = 通讯作者；在研论文作者名单定稿前不写 author 字段，位次用 description 文本表述。
-- news 日期格式 `YYYY-MM`（如 `2026-08`）。
+- 个人贡献依据公开贡献声明或用户确认；不得将共同工作表述为独立完成。
+- 构建后运行 `npm --prefix site run check:content`，验证状态、双语一致性和静态正文。
 
 ## 不可改动项
 

@@ -1,6 +1,7 @@
 [site]
-title = "Peng Cai"
-description = "Personal website of Peng Cai — master's student in applied statistics at Chongqing Medical University, working on real-world health data, causal inference and time-series forecasting."
+title = "Peng Cai’s Academic Homepage"
+nav_title = "Peng Cai"
+description = "Peng Cai, a master’s student in Applied Statistics at Chongqing Medical University, studying infectious disease forecasting, observational vaccine research and pediatric health data."
 favicon = "/favicon.svg"
 last_updated = "November 2, 2026"
 
@@ -44,7 +45,7 @@ zh = "中文"
 en = "English"
 
 [[navigation]]
-title = "About"
+title = "Home"
 type = "page"
 target = "about"
 href = "/"
@@ -60,12 +61,6 @@ title = "Research"
 type = "page"
 target = "projects"
 href = "/projects"
-
-[[navigation]]
-title = "Awards"
-type = "page"
-target = "awards"
-href = "/awards"
 
 [[navigation]]
 title = "CV"

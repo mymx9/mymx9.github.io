@@ -1,69 +1,50 @@
-type = "card"
+type = "research"
 title = "Research"
-description = "Selected research projects, data products, and applied work."
+description = "Connecting observational studies, forecasting and model evaluation through infectious disease and pediatric health data."
 
-[[items]]
-title = "Multimodal Pediatric Pneumonia Assessment — M.S. Thesis (Ongoing)"
-subtitle = "PediatriXlab, Children's Hospital of Chongqing Medical University"
-date = "2025–ongoing"
-content = "M.S. thesis research; not yet completed. Plans to combine pediatric chest X-rays, complete blood counts and available inflammatory markers, and chief-complaint/history-of-present-illness text for pneumonia detection, severity stratification and etiology classification. Architecture, fusion and training strategies will be selected on development data and fixed before independent evaluation.\n\nThe protocol proposes retrospective development and validation, followed by a prospective multicentre comparison with clinicians. Planned analyses include patient-level data splitting, independent temporal validation, robustness to missing variables or modalities, and discrimination, calibration and decision-curve assessment. Inputs will be restricted to information available at presentation, excluding discharge and post-diagnostic documentation to reduce label leakage.\n\nKermany and PediCXR are intended only for external evaluation of image-based pneumonia detection, not the full multimodal system, severity or etiology tasks. The later phase plans blinded comparisons with clinicians of different experience levels using the same case information and an independent expert reference standard. This is a planned diagnostic-accuracy comparison and does not establish improved patient outcomes from AI assistance."
+[[themes]]
+id = "forecasting"
+title = "Infectious disease forecasting"
+question = "How reliable are forecasts across surveillance settings?"
+overview = "My work connects benchmarking on multi-country surveillance data with adaptation to pediatric hospitals, focusing on forecast accuracy, prediction intervals and transfer across hospitals."
 
-[[items]]
-title = "Controllable Chest X-ray Synthesis for Pediatric Data"
-subtitle = "PediatriXlab (GPU cluster)"
-date = "2026–ongoing"
-content = "Transferring RoentGen-v2 (finely-controllable latent diffusion for radiographs) to in-house pediatric chest X-rays via LoRA adaptation with a clinic-token conditioning branch and image-grounded losses; targets controllable synthesis of rare-condition samples to complement downstream clinical models."
+[[themes.works]]
+publication_id = "cai2026tsfm"
 
-[[items]]
-title = "Pertussis Vaccination Timing and Safety — Chongqing Birth Cohort"
-subtitle = "PediatriXlab, Children's Hospital of Chongqing Medical University"
-date = "2024–2026"
-content = "Linked immunisation, surveillance and AEFI records in a retrospective Chongqing birth cohort of 76,844 eligible infants, including 69,612 in the effectiveness comparison. Compared post-vaccination incidence and safety by initiation age and evaluated interval timeliness; no significant incidence difference was observed between initiation groups, while timely intervals were associated with lower risk. **Output:** joint first-author paper published in *BMC Public Health* on 6 April 2026; [DOI](https://doi.org/10.1186/s12889-026-27239-x)."
+[[themes.works]]
+id = "residual-adaptation"
+title = "Residual adaptation for pediatric hospital forecasting"
+status = "Manuscript in preparation"
+summary = "Studying local residual correction and interval estimation for frozen time series foundation models through retrospective evaluation of one-week-ahead forecasts."
+contribution = "Led forecasting analyses and model evaluation."
 
-[[items]]
-title = "Benchmarking Time-Series Foundation Models for Infectious Disease Surveillance"
-subtitle = "PediatriXlab"
-date = "2025–2026"
-content = "Assembled 289 disease-country series across 70+ diseases and six countries (106,234 weekly or monthly observations). Compared four zero-shot TSFM families with five neural baselines and naive/seasonal naive references across one-step, medium- and long-term horizons, assessing point forecasts and Moirai prediction intervals. Findings are limited to one held-out year per series. **Output:** joint first-author paper published online in *BMC Public Health* on 14 October 2026 (Article in Press); [DOI](https://doi.org/10.1186/s12889-026-29918-1)."
+[[themes]]
+id = "vaccine-studies"
+title = "Observational vaccine research"
+question = "How do vaccination timing and population differences relate to disease risk?"
+overview = "In collaboration with disease control authorities, I use linked immunisation and surveillance records to study infant pertussis, with an emphasis on vaccination timing, follow-up stages and population heterogeneity."
 
-[[items]]
-title = "Frozen TSFM Residual Adaptation — Pediatric Hospital Forecasting"
-subtitle = "PediatriXlab"
-date = "2025–ongoing"
-content = "Joint first author; manuscript in preparation. Investigates one-week-ahead respiratory infection forecasting in children’s hospitals using frozen Chronos-2 and Moirai-2 backbones, a pooled LightGBM residual adapter for point forecasts, and Gaussian-process error-scale estimates for prediction intervals. Compares configurations with and without weather and holiday covariates against conventional forecasting references. Matched ablations, leave-one-city-out validation, coverage, interval width and weighted interval scores assess adaptation, cross-hospital transfer and local failures. This retrospective evaluation concerns hospital-recorded cases rather than population incidence; transfer is assessed within the same evaluation period, and clinical benefit or an automatic correction policy is not established."
+[[themes.works]]
+publication_id = "cai2026pertussis"
 
-[[items]]
-title = "PedDialog — Pediatric Consultation Dialogue Dataset"
-subtitle = "PediatriXlab"
-date = "2025–2026"
-content = "Joint first author. Under review at Scientific Data. Multi-turn pediatrician-caregiver consultations, cleaned and de-identified through a multi-stage process. Each physician response is paired with LLM-generated reasoning reviewed by pediatricians, with human-verified English translations. Annotations explain plausible clinical rationales rather than physicians' actual internal thought processes."
+[[themes.works]]
+id = "sex-differences"
+title = "Sex differences in infant pertussis across vaccination stages"
+status = "Manuscript in preparation"
+summary = "Using time-updated vaccination stages and interaction analyses to examine how male–female incidence differences vary during follow-up, with sensitivity analyses of these observational associations."
+contribution = "Led statistical analyses, including time-updated stage modelling, interaction analyses and sensitivity analyses."
 
-[[items]]
-title = "Synthetic Tabular Data Generation and Evaluation — Pediatric Records"
-subtitle = "PediatriXlab"
-date = "2026–ongoing"
-content = "Benchmarked SDV-family generative models (copula, CTGAN, TVAE, TabDDPM) with grouped/constrained structures, evaluated via similarity (UMAP), machine-learning utility (hospitalization/ICU prediction), privacy metrics, and ablation studies. Co-first author; manuscript in preparation."
+[[themes]]
+id = "pediatric-data"
+title = "Multimodal and clinical pediatric data"
+question = "How can different forms of pediatric clinical information be organised and evaluated?"
+overview = "I study the organisation, modelling and evaluation of pediatric imaging, laboratory results, clinical text and consultation dialogues."
 
-[[items]]
-title = "Sex Differences in Infant Pertussis Across Vaccination Stages"
-subtitle = "PediatriXlab"
-date = "2026–ongoing"
-content = "Joint first author; manuscript in preparation. Links Chongqing immunisation registry and pertussis surveillance records, splitting follow-up from birth into time-updated vaccination stages with a post-dose immune-response lag. Quasi-Poisson regression with infant-clustered robust standard errors adjusts for age, calendar month, region and first-dose vaccine product. Sex-by-stage interaction tests, stage-specific incidence rate ratios and ratios of rate ratios characterise sex disparities. Sensitivity analyses vary post-dose lags, geographic adjustment, inpatient diagnosis outcomes and cohort eligibility. The study describes stage-specific disparities; it does not separate vaccination from maturation, estimate vaccine effectiveness or establish equivalence between sexes at later stages."
+[[themes.works]]
+id = "masters-thesis"
+title = "Multimodal assessment of pediatric pneumonia"
+status = "M.S. thesis · Ongoing"
+summary = "Plans to combine chest X-rays, laboratory data and clinical text for pneumonia detection, severity stratification and etiology classification, with evaluation of discrimination, calibration and robustness to missing modalities."
 
-[[items]]
-title = "Commercial Vehicle Auto Insurance Risk Monitoring"
-subtitle = "Ping An Property & Casualty Insurance, Chongqing Branch (Data Analyst)"
-date = "2021–2024"
-content = "Citywide risk monitoring and analysis for commercial vehicle auto insurance; built and maintained the branch data analysis platform."
-
-[[items]]
-title = "Air Pollution and the Demand for Commercial Health Insurance"
-subtitle = "Chongqing University — undergraduate thesis"
-date = "2021"
-content = "Empirical study of how air pollution affects household demand for commercial health insurance, using econometric models with provincial panel data."
-
-[[items]]
-title = "MCM/ICM 2019 Problem D — Drone-Based Disaster Relief System"
-subtitle = "Mathematical Contest in Modeling"
-date = "2019"
-content = "Designed a drone-based disaster relief response system for hurricane-affected Puerto Rico with integer programming, entropy weighting, and fuzzy synthetic decision analysis. Awarded **Meritorious Winner**."
+[[themes.works]]
+publication_id = "cai2026pedialog"

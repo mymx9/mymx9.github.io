@@ -1,4 +1,19 @@
 type = "publication"
 title = "论文"
-description = "按发表状态分组。* 为共同第一作者，# 为通讯作者。"
+description = "已发表论文与在审稿件。"
 source = "publications.bib"
+
+[entries.cai2026tsfm]
+research_title = "多国传染病时序基础模型基准"
+summary = "在六国传染病监测序列上评价零样本时序基础模型的预测表现。"
+contribution = "与另一位共同第一作者共同完成数据收集与分析，并参与研究设计、方法开发和初稿撰写。"
+
+[entries.cai2026pertussis]
+research_title = "百日咳疫苗接种时序与安全性"
+summary = "基于出生队列研究百日咳疫苗启动月龄、接种及时性与安全性。"
+contribution = "基于疾控合作方提供的数据主导分析，并参与研究设计、方法开发和初稿撰写。"
+
+[entries.cai2026pedialog]
+research_title = "PedDialog：儿科问诊对话数据集"
+summary = "儿科问诊对话数据集，包含经儿科医生审核的模型生成推理标注。"
+contribution = "主导分析工作，并参与数据整理、软件与模型开发、验证和初稿撰写。"

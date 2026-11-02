@@ -1,3 +1,6 @@
 type = "text"
 title = "CV"
+description = "Education and experience at a glance"
 source = "cv.md"
+# Optional independent PDF. Set a local /filename.pdf or an https:// URL when ready.
+# pdf_url = "/cv.pdf"
