@@ -27,10 +27,10 @@ date = "2025–2026"
 content = "Assembled 289 disease-country series across 70+ diseases and six countries (106,234 weekly or monthly observations). Compared four zero-shot TSFM families with five neural baselines and naive/seasonal naive references across one-step, medium- and long-term horizons, assessing point forecasts and Moirai prediction intervals. Findings are limited to one held-out year per series. **Output:** joint first-author paper published online in *BMC Public Health* on 14 October 2026 (Article in Press); [DOI](https://doi.org/10.1186/s12889-026-29918-1)."
 
 [[items]]
-title = "Multicentre Respiratory Outpatient Forecasting — Six Chinese Hospitals"
+title = "Frozen TSFM Residual Adaptation — Pediatric Hospital Forecasting"
 subtitle = "PediatriXlab"
 date = "2025–ongoing"
-content = "Weekly outpatient visits for 3 respiratory conditions across six hospitals; a disease-specific TSFM-persistence hybrid compared with clinically interpretable baselines using repeated rolling-origin validation and clinical outcome metrics. Co-first author; manuscript in preparation (working title)."
+content = "Joint first author; manuscript in preparation. Investigates one-week-ahead respiratory infection forecasting in children’s hospitals using frozen Chronos-2 and Moirai-2 backbones, a pooled LightGBM residual adapter for point forecasts, and Gaussian-process error-scale estimates for prediction intervals. Compares configurations with and without weather and holiday covariates against conventional forecasting references. Matched ablations, leave-one-city-out validation, coverage, interval width and weighted interval scores assess adaptation, cross-hospital transfer and local failures. This retrospective evaluation concerns hospital-recorded cases rather than population incidence; transfer is assessed within the same evaluation period, and clinical benefit or an automatic correction policy is not established."
 
 [[items]]
 title = "PedDialog — Pediatric Consultation Dialogue Dataset"
@@ -45,10 +45,10 @@ date = "2026–ongoing"
 content = "Benchmarked SDV-family generative models (copula, CTGAN, TVAE, TabDDPM) with grouped/constrained structures, evaluated via similarity (UMAP), machine-learning utility (hospitalization/ICU prediction), privacy metrics, and ablation studies. Co-first author; manuscript in preparation."
 
 [[items]]
-title = "Sex Differences in Pertussis Risk Trajectory — Birth Cohort"
+title = "Sex Differences in Infant Pertussis Across Vaccination Stages"
 subtitle = "PediatriXlab"
 date = "2026–ongoing"
-content = "Follow-up analysis of the Chongqing birth cohort using a target-trial framework to characterize sex differences in pertussis risk across the primary immunization series. Co-first author; manuscript in preparation."
+content = "Joint first author; manuscript in preparation. Links Chongqing immunisation registry and pertussis surveillance records, splitting follow-up from birth into time-updated vaccination stages with a post-dose immune-response lag. Quasi-Poisson regression with infant-clustered robust standard errors adjusts for age, calendar month, region and first-dose vaccine product. Sex-by-stage interaction tests, stage-specific incidence rate ratios and ratios of rate ratios characterise sex disparities. Sensitivity analyses vary post-dose lags, geographic adjustment, inpatient diagnosis outcomes and cohort eligibility. The study describes stage-specific disparities; it does not separate vaccination from maturation, estimate vaccine effectiveness or establish equivalence between sexes at later stages."
 
 [[items]]
 title = "Commercial Vehicle Auto Insurance Risk Monitoring"

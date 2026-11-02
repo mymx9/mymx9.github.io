@@ -25,7 +25,9 @@
 - **Cai P\***, Wei Q\*, et al. A Pediatric Consultation Dialogue Dataset with Pediatrician-Validated Reasoning Annotations — *Scientific Data* (under review)
 ### Work in Progress
 
-- Three further manuscripts in preparation, joint first author (multicentre TSFM forecasting; synthetic tabular data evaluation; sex differences in pertussis risk)
+- Shared residual adaptation and prediction-interval evaluation for frozen TSFMs in pediatric hospital respiratory forecasting (joint first author; in preparation).
+- Sex differences in infant pertussis incidence using time-updated vaccination stages, quasi-Poisson regression and interaction analysis (joint first author; in preparation).
+- Synthetic pediatric tabular data generation and evaluation (joint first author; in preparation).
 
 \* joint first author; # corresponding author.
 

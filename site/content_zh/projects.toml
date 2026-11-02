@@ -27,10 +27,10 @@ date = "2025–2026"
 content = "构建 6 国、70 余病种的 289 个疾病-国家序列（106,234 条周度或月度观测），比较 4 类零样本 TSFM、5 个神经网络基线及朴素/季节朴素参考模型，覆盖单步、中期与长期预测。评价点预测误差及 Moirai 区间预测；结论限于每序列一个留出年的测试期。**产出：** 共同第一作者论文，2026-10-14 在线发表于 *BMC Public Health*（Article in Press），[DOI](https://doi.org/10.1186/s12889-026-29918-1)。"
 
 [[items]]
-title = "Multicentre Respiratory Outpatient Forecasting — 六院多中心"
+title = "Frozen TSFM Residual Adaptation — 儿童医院呼吸道预测"
 subtitle = "PediatriXlab"
 date = "2025–在研"
-content = "六家医院 3 种呼吸道感染病种的周度门诊量预测：病种特异 TSFM 与持久性混合模型、同口径基线集、重复滚动起点验证与临床结局指标（病例数尺度上的预测误差降低、高发周改善）。共同第一作者，论文在研（投稿前暂定题）。"
+content = "共同第一作者，稿件在研。研究儿童医院呼吸道感染的单周前瞻预测，在冻结 Chronos-2 与 Moirai-2 权重的基础上，使用共享 LightGBM 残差适配器修正点预测，并以高斯过程估计误差尺度、构建预测区间。比较有无天气与节假日协变量的配置及常规预测基线，结合匹配消融、留一城市验证和覆盖率、区间宽度与加权区间评分，评价适配效果、跨院迁移与局部失效。研究属于回顾性预测评价；医院记录病例数不等于人群发病率，留一城市验证仍处于同一评价时段，尚不能推断临床效益或支持自动校正策略。"
 
 [[items]]
 title = "PedDialog — 儿科问诊对话数据集"
@@ -45,10 +45,10 @@ date = "2026–在研"
 content = "基于 SDV 框架（copula、CTGAN、TVAE、TabDDPM）分组约束生成与评估：相似性（UMAP）、机器学习效用（住院/ICU 预测任务）、隐私评估与消融分析。共同第一作者，论文在研。"
 
 [[items]]
-title = "Sex Differences in Pertussis Risk Trajectory — 性别差异队列研究"
+title = "Sex Differences in Infant Pertussis — 基础免疫阶段队列研究"
 subtitle = "PediatriXlab"
 date = "2026–在研"
-content = "沿用重庆出生队列，采用目标试验模拟框架刻画百日咳风险轨迹的性别差异。共同第一作者，在研。"
+content = "共同第一作者，稿件在研。链接重庆免疫登记与百日咳监测资料，将婴儿自出生起的人时按接种阶段动态划分，并设置接种后免疫形成滞后。采用拟泊松回归与婴儿层面聚类稳健标准误，调整年龄、日历月、地区和首剂疫苗产品，通过性别×接种阶段交互检验、阶段特异发病率比及比值之比刻画男女差异。敏感性分析涵盖不同接种后滞后、地区调整、住院诊断结局和入组条件。研究描述阶段特异的性别差异，不能分离接种与年龄成熟效应，也不估计疫苗有效性或证明后期男女等效。"
 
 [[items]]
 title = "Commercial Vehicle Auto Insurance Risk Monitoring — 车险风险监控"
