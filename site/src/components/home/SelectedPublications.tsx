@@ -28,7 +28,7 @@ export default function SelectedPublications({ publications, title, enableOnePag
                 <Link
                     href={enableOnePageMode ? "/#publications" : "/publications"}
                     prefetch={true}
-                    className="text-accent hover:text-accent-dark text-sm font-medium transition-all duration-200 rounded hover:bg-accent/10 hover:shadow-sm"
+                    className="shrink-0 whitespace-nowrap ml-4 text-accent hover:text-accent-dark text-sm font-medium transition-all duration-200 rounded hover:bg-accent/10 hover:shadow-sm"
                 >
                     {messages.home.viewAll} →
                 </Link>
