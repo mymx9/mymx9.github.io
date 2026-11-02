@@ -30,13 +30,13 @@ content = "构建 6 国、70 余病种的 289 个疾病-国家序列（106,234 �
 title = "Multicentre Respiratory Outpatient Forecasting — 六院多中心"
 subtitle = "PediatriXlab"
 date = "2025–在研"
-content = "六家医院 3 种呼吸道感染病种的周度门诊量预测：病种特异 TSFM 与持久性混合模型、同口径基线集、重复滚动起点验证与临床结局指标（绝对病例数减少、高发周改善）。共同第一作者，论文在研（投稿前暂定题）。"
+content = "六家医院 3 种呼吸道感染病种的周度门诊量预测：病种特异 TSFM 与持久性混合模型、同口径基线集、重复滚动起点验证与临床结局指标（病例数尺度上的预测误差降低、高发周改善）。共同第一作者，论文在研（投稿前暂定题）。"
 
 [[items]]
 title = "PedDialog — 儿科问诊对话数据集"
 subtitle = "PediatriXlab"
 date = "2025–2026"
-content = "构建儿科问诊对话数据集并加入儿科医生验证的推理标注，支持儿科临床 AI 发展。已投稿 *Scientific Data*（共同第一作者）。"
+content = "共同第一作者。Scientific Data 审稿中。儿科医生与照护者的多轮问诊对话数据集，经过清洗与多阶段去标识化；每条医生回复配有语言模型生成、儿科医生审核的推理标注，并提供经人工核验的英文译文。标注解释回复的临床依据，不代表医生真实的内部思维过程。"
 
 [[items]]
 title = "Synthetic Tabular Data — 儿科数据合成与评估"

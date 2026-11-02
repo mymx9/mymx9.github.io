@@ -33,6 +33,7 @@ export interface LocaleMessages {
     viewAll: string;
   };
   publications: {
+    authorLegend: string;
     searchPlaceholder: string;
     filters: string;
     year: string;
@@ -83,6 +84,7 @@ const en: LocaleMessages = {
     viewAll: 'View All',
   },
   publications: {
+    authorLegend: '* Joint first author; # Corresponding author.',
     searchPlaceholder: 'Search publications...',
     filters: 'Filters',
     year: 'Year',
@@ -133,6 +135,7 @@ const zh: LocaleMessages = {
     viewAll: '查看全部',
   },
   publications: {
+    authorLegend: '* 共同第一作者；# 通讯作者。',
     searchPlaceholder: '搜索论文...',
     filters: '筛选',
     year: '年份',

@@ -8,7 +8,6 @@ last_updated = "November 2, 2026"
 name = "Peng Cai"
 title = "Master's student in Applied Statistics"
 institution = "Chongqing Medical University"
-avatar = "/bio.jpg"
 
 [social]
 # Contact information (leave blank or delete to hide)
@@ -23,7 +22,7 @@ location_details = [
 
 [features]
 # Show a like button on the about page
-enable_likes = true
+enable_likes = false
 
 # Display all subpages on a single page
 enable_one_page_mode = false

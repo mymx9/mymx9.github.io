@@ -16,9 +16,15 @@
 
 ## 论文
 
+### 已发表
+
 - **Cai P\***、He X\* 等. Effectiveness and safety of 2-month versus 3-month pertussis vaccination initiation and the impact of dosing timeliness: a population-based birth cohort study in China. — *BMC Public Health* **26**, 1580 (2026). [DOI](https://doi.org/10.1186/s12889-026-27239-x)
 - **Cai P\***、Huang G\*、Xu X\#. Benchmarking time series foundation models for multi-country infectious disease forecasting: a retrospective evaluation across over 70 diseases. — *BMC Public Health* (2026), 2026-10-14 在线发表，Article in Press. [DOI](https://doi.org/10.1186/s12889-026-29918-1)
-- **Cai P\***、Wei Q\* 等. 儿科医生验证推理标注的儿科问诊对话数据集 — *Scientific Data*（在投）
+### 审稿中
+
+- **Cai P\***、Wei Q\* 等. 儿科医生验证推理标注的儿科问诊对话数据集 — *Scientific Data*（审稿中）
+### 在研
+
 - 另有 3 篇在研（均为共同第一作者）：六院多中心呼吸道门诊预测、儿科数据合成与评估、百日咳风险轨迹的性别差异
 
 \* 共同第一作者；# 通讯作者。

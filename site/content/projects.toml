@@ -36,7 +36,7 @@ content = "Weekly outpatient visits for 3 respiratory conditions across six hosp
 title = "PedDialog — Pediatric Consultation Dialogue Dataset"
 subtitle = "PediatriXlab"
 date = "2025–2026"
-content = "Constructed a pediatric consultation dialogue dataset with pediatrician-validated reasoning annotations for clinical-AI development. Submitted to *Scientific Data* (joint first author)."
+content = "Joint first author. Under review at Scientific Data. Multi-turn pediatrician-caregiver consultations, cleaned and de-identified through a multi-stage process. Each physician response is paired with LLM-generated reasoning reviewed by pediatricians, with human-verified English translations. Annotations explain plausible clinical rationales rather than physicians' actual internal thought processes."
 
 [[items]]
 title = "Synthetic Tabular Data Generation and Evaluation — Pediatric Records"

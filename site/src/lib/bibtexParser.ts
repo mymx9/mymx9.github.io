@@ -1,4 +1,4 @@
-import { Publication, PublicationType, ResearchArea } from '@/types/publication';
+import { Publication, PublicationType, PublicationStatus, ResearchArea } from '@/types/publication';
 import { getConfig } from './config';
 import { getRuntimeI18nConfig } from './i18n/config';
 import { parseBibTeXInline } from './bibtexInline';
@@ -35,6 +35,12 @@ const monthMapping: Record<string, number> = {
   nov: 11, november: 11,
   dec: 12, december: 12,
 };
+
+// Older entries without an explicit status retain the published default.
+function parsePublicationStatus(value?: string): PublicationStatus {
+  const statuses: PublicationStatus[] = ['published', 'accepted', 'under-review', 'submitted', 'in-preparation', 'draft'];
+  return statuses.includes(value as PublicationStatus) ? value as PublicationStatus : 'published';
+}
 
 export function parseBibTeX(bibtexContent: string, locale?: string): Publication[] {
   const highlightNames = getHighlightNames(locale);
@@ -73,7 +79,7 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       year,
       month: monthMapping[tags.month?.toLowerCase()] ? String(month) : tags.month,
       type,
-      status: 'published',
+      status: parsePublicationStatus(tags.status),
       tags: keywords,
       keywords,
       researchArea: detectResearchArea(tags.title, keywords),
@@ -89,11 +95,12 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       code: tags.code,
       abstract: cleanBibTeXString(tags.abstract),
       description: cleanBibTeXString(tags.description || tags.note),
+      summary: cleanBibTeXString(tags.summary),
       selected,
       preview,
 
       // Store original BibTeX (excluding custom fields)
-      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code']),
+      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'status', 'summary']),
     };
 
     // Clean up undefined fields
@@ -197,10 +204,10 @@ function parseAuthors(authorsStr: string, highlightNames: string[]): Array<{ nam
       let name = author.trim();
 
       // Check for corresponding author marker
-      const isCorresponding = name.includes('*');
+      const isCorresponding = name.includes('#');
 
-      // Check for co-author marker (#)
-      const isCoAuthor = name.includes('#');
+      // Check for joint first author marker (*)
+      const isCoAuthor = name.includes('*');
 
       // Remove special markers from name
       name = name.replace(/[*#]/g, '');

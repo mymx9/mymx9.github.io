@@ -11,10 +11,12 @@ import {
     ClipboardDocumentIcon,
     DocumentTextIcon
 } from '@heroicons/react/24/outline';
+import { useLocaleStore } from '@/lib/stores/localeStore';
 import { Publication } from '@/types/publication';
 import { PublicationPageConfig } from '@/types/page';
 import { cn } from '@/lib/utils';
 import { useMessages } from '@/lib/i18n/useMessages';
+import { PublicationAuthors, PublicationVenue } from '@/components/publications/PublicationMeta';
 import FormattedBibTeXText from './FormattedBibTeXText';
 
 interface PublicationsListProps {
@@ -31,6 +33,8 @@ export default function PublicationsList({ config, publications, embedded = fals
     const [showFilters, setShowFilters] = useState(false);
     const [expandedBibtexId, setExpandedBibtexId] = useState<string | null>(null);
     const [expandedAbstractId, setExpandedAbstractId] = useState<string | null>(null);
+
+    const zh = useLocaleStore(state => state.locale) === 'zh';
 
     // Extract unique years and types for filters
     const years = useMemo(() => {
@@ -58,6 +62,13 @@ export default function PublicationsList({ config, publications, embedded = fals
             return matchesSearch && matchesYear && matchesType;
         });
     }, [publications, searchQuery, selectedYear, selectedType]);
+
+    const groups = [
+        { key: 'published', title: zh ? '已发表论文' : 'Published Articles', statuses: ['published'] },
+        { key: 'accepted', title: zh ? '已接收论文' : 'Accepted Articles', statuses: ['accepted'] },
+        { key: 'review', title: zh ? '在审与已投稿稿件' : 'Manuscripts Under Review or Submitted', statuses: ['under-review', 'submitted'] },
+        { key: 'preparation', title: zh ? '在研工作' : 'Work in Progress', statuses: ['in-preparation', 'draft'] },
+    ].map(group => ({ ...group, items: filteredPublications.filter(pub => group.statuses.includes(pub.status)) })).filter(group => group.items.length > 0);
 
     return (
         <motion.div
@@ -191,7 +202,10 @@ export default function PublicationsList({ config, publications, embedded = fals
                         {messages.publications.noResults}
                     </div>
                 ) : (
-                    filteredPublications.map((pub, index) => (
+                    groups.map(group => (
+                        <section key={group.key} className="space-y-4" aria-labelledby={`group-${group.key}`}>
+                            <h2 id={`group-${group.key}`} className="text-2xl font-serif font-semibold text-primary pt-3">{group.title}</h2>
+                            {group.items.map((pub, index) => (
                         <motion.div
                             key={pub.id}
                             initial={{ opacity: 0, y: 20 }}
@@ -218,24 +232,14 @@ export default function PublicationsList({ config, publications, embedded = fals
                                         <FormattedBibTeXText nodes={pub.titleNodes} fallback={pub.title} />
                                     </h3>
                                     <p className={`${embedded ? "text-sm" : "text-base"} text-neutral-600 dark:text-neutral-400 mb-2`}>
-                                        {pub.authors.map((author, idx) => (
-                                            <span key={idx}>
-                                                <span className={`${author.isHighlighted ? 'font-semibold text-accent' : ''} ${author.isCoAuthor ? `underline underline-offset-4 ${author.isHighlighted ? 'decoration-accent' : 'decoration-neutral-400'}` : ''}`}>
-                                                    {author.name}
-                                                </span>
-                                                {author.isCorresponding && (
-                                                    <sup className={`ml-0 ${author.isHighlighted ? 'text-accent' : 'text-neutral-600 dark:text-neutral-400'}`}>†</sup>
-                                                )}
-                                                {idx < pub.authors.length - 1 && ', '}
-                                            </span>
-                                        ))}
-                                    </p>
+                                        <PublicationAuthors publication={pub} />                                    </p>
                                     <p className="text-sm font-medium text-neutral-800 dark:text-neutral-600 mb-3">
-                                        {pub.journal || pub.conference} {pub.year}
+                                        <PublicationVenue publication={pub} />
+                                        {pub.status !== 'published' && <span className="block mt-1 text-accent">{pub.status === 'under-review' ? (zh ? '审稿中' : 'Under review') : pub.status === 'submitted' ? (zh ? '已投稿' : 'Submitted') : pub.status === 'accepted' ? (zh ? '已接收' : 'Accepted') : (zh ? '在研，尚未发表' : 'In preparation; unpublished')}</span>}
                                     </p>
 
                                     {pub.description && (
-                                        <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-4 line-clamp-3">
+                                        <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-4 leading-relaxed">
                                             {pub.description}
                                         </p>
                                     )}
@@ -336,6 +340,8 @@ export default function PublicationsList({ config, publications, embedded = fals
                                 </div>
                             </div>
                         </motion.div>
+                    ))}
+                        </section>
                     ))
                 )}
             </div>

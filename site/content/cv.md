@@ -16,9 +16,15 @@
 
 ## Publications
 
+### Published Articles
+
 - **Cai P\***, He X\*, et al. Effectiveness and safety of 2-month versus 3-month pertussis vaccination initiation and the impact of dosing timeliness: a population-based birth cohort study in China. — *BMC Public Health* **26**, 1580 (2026). [DOI](https://doi.org/10.1186/s12889-026-27239-x)
 - **Cai P\***, Huang G\*, Xu X#. Benchmarking time series foundation models for multi-country infectious disease forecasting: a retrospective evaluation across over 70 diseases. — *BMC Public Health* (2026), published online 14 October 2026, Article in Press. [DOI](https://doi.org/10.1186/s12889-026-29918-1)
-- **Cai P\***, Wei Q\*, et al. A Pediatric Consultation Dialogue Dataset with Pediatrician-Validated Reasoning Annotations — *Scientific Data* (submitted)
+### Under Review
+
+- **Cai P\***, Wei Q\*, et al. A Pediatric Consultation Dialogue Dataset with Pediatrician-Validated Reasoning Annotations — *Scientific Data* (under review)
+### Work in Progress
+
 - Three further manuscripts in preparation, joint first author (multicentre TSFM forecasting; synthetic tabular data evaluation; sex differences in pertussis risk)
 
 \* joint first author; # corresponding author.

@@ -3,12 +3,9 @@ title = "关于我"
 
 [profile]
 research_interests = [
-  "因果推断与观察性研究",
-  "时间序列分析与传染病预测",
-  "统计学习与生成式模型（合成数据）",
-  "医学影像与多模态学习",
-  "生物统计与健康数据科学",
-  "保险与金融统计应用"
+  "真实世界健康数据与观察性研究",
+  "传染病时间序列预测",
+  "医疗合成数据与模型评价",
 ]
 
 [[sections]]
@@ -20,9 +17,9 @@ title = "关于我"
 [[sections]]
 id = "featured_publications"
 type = "publications"
-title = "精选论文"
+title = "代表论文（已发表）"
 filter = "selected"
-limit = 4
+limit = 2
 
 [[sections]]
 id = "news"
