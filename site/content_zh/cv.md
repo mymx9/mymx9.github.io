@@ -16,8 +16,8 @@
 
 ## 论文
 
-- **Cai P\***、He X\* 等. 2 月龄与 3 月龄百日咳疫苗启动的有效性与安全性——中国出生队列研究 — *BMC Public Health* 2026, 26:1580
-- **Cai P\***、Huang G\*、Xu X\#. 时序基础模型多国传染病预测基准（70 余病种） — *BMC Public Health*（小修返修中）
+- **Cai P\***、He X\* 等. Effectiveness and safety of 2-month versus 3-month pertussis vaccination initiation and the impact of dosing timeliness: a population-based birth cohort study in China. — *BMC Public Health* **26**, 1580 (2026). [DOI](https://doi.org/10.1186/s12889-026-27239-x)
+- **Cai P\***、Huang G\*、Xu X\#. Benchmarking time series foundation models for multi-country infectious disease forecasting: a retrospective evaluation across over 70 diseases. — *BMC Public Health* (2026), 2026-10-14 在线发表，Article in Press. [DOI](https://doi.org/10.1186/s12889-026-29918-1)
 - **Cai P\***、Wei Q\* 等. 儿科医生验证推理标注的儿科问诊对话数据集 — *Scientific Data*（在投）
 - 另有 3 篇在研（均为共同第一作者）：六院多中心呼吸道门诊预测、儿科数据合成与评估、百日咳风险轨迹的性别差异
 

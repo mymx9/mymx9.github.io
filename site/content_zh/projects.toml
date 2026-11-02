@@ -18,13 +18,13 @@ content = "将 RoentGen-v2（面向放射影像的精细可控潜在扩散模型
 title = "Pertussis Vaccination Timing and Safety — 重庆出生队列"
 subtitle = "PediatriXlab、重庆医科大学附属儿童医院儿童医学大数据中心"
 date = "2024–2026"
-content = "链接重庆 76,844 名婴儿的免疫、发病与安全（AEFI）数据库，评估 2 月龄与 3 月龄启动的真实世界有效性与安全性，并量化接种及时性的影响。**产出：** 第一作者论文发表于 *BMC Public Health*（2026）。"
+content = "基于免疫、发病与 AEFI 数据链接的重庆回顾性出生队列，纳入 76,844 名符合条件婴儿，有效性比较包含 69,612 名。比较 2 与 3 月龄启动的接种后发病率与安全性，并评估接种间隔及时性；未观察到启动组间发病率的显著差异，准时间隔与较低风险相关。**产出：** 共同第一作者论文，发表于 *BMC Public Health*（2026-04-06），[DOI](https://doi.org/10.1186/s12889-026-27239-x)。"
 
 [[items]]
 title = "Benchmarking Time-Series Foundation Models — 多国传染病监测"
 subtitle = "PediatriXlab"
 date = "2025–2026"
-content = "构建 289 个疾病-国家序列（70 余病种、6 国监测系统、106,234 条观测），零样本评估 4 个时序基础模型并对比 5 个神经网络基线。**产出：** 共同第一作者论文，*BMC Public Health* 小修返修中。"
+content = "构建 6 国、70 余病种的 289 个疾病-国家序列（106,234 条周度或月度观测），比较 4 类零样本 TSFM、5 个神经网络基线及朴素/季节朴素参考模型，覆盖单步、中期与长期预测。评价点预测误差及 Moirai 区间预测；结论限于每序列一个留出年的测试期。**产出：** 共同第一作者论文，2026-10-14 在线发表于 *BMC Public Health*（Article in Press），[DOI](https://doi.org/10.1186/s12889-026-29918-1)。"
 
 [[items]]
 title = "Multicentre Respiratory Outpatient Forecasting — 六院多中心"

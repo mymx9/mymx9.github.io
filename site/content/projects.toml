@@ -18,13 +18,13 @@ content = "Transferring RoentGen-v2 (finely-controllable latent diffusion for ra
 title = "Pertussis Vaccination Timing and Safety — Chongqing Birth Cohort"
 subtitle = "PediatriXlab, Children's Hospital of Chongqing Medical University"
 date = "2024–2026"
-content = "Linked immunization, disease surveillance, and safety (AEFI) databases for 76,844 infants born in Chongqing; evaluated the real-world effectiveness and safety of 2-month versus 3-month vaccine initiation, and quantified the impact of dosing timeliness. **Output:** first-author paper in *BMC Public Health* (2026)."
+content = "Linked immunisation, surveillance and AEFI records in a retrospective Chongqing birth cohort of 76,844 eligible infants, including 69,612 in the effectiveness comparison. Compared post-vaccination incidence and safety by initiation age and evaluated interval timeliness; no significant incidence difference was observed between initiation groups, while timely intervals were associated with lower risk. **Output:** joint first-author paper published in *BMC Public Health* on 6 April 2026; [DOI](https://doi.org/10.1186/s12889-026-27239-x)."
 
 [[items]]
 title = "Benchmarking Time-Series Foundation Models for Infectious Disease Surveillance"
 subtitle = "PediatriXlab"
 date = "2025–2026"
-content = "Assembled 289 disease-country time series (70+ diseases, 6 national surveillance systems, 106,234 observations) and evaluated 4 time-series foundation models in zero-shot mode against 5 neural baselines. **Output:** joint first-author paper, in revision at *BMC Public Health*."
+content = "Assembled 289 disease-country series across 70+ diseases and six countries (106,234 weekly or monthly observations). Compared four zero-shot TSFM families with five neural baselines and naive/seasonal naive references across one-step, medium- and long-term horizons, assessing point forecasts and Moirai prediction intervals. Findings are limited to one held-out year per series. **Output:** joint first-author paper published online in *BMC Public Health* on 14 October 2026 (Article in Press); [DOI](https://doi.org/10.1186/s12889-026-29918-1)."
 
 [[items]]
 title = "Multicentre Respiratory Outpatient Forecasting — Six Chinese Hospitals"
