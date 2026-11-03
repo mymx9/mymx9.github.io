@@ -6,7 +6,7 @@ description = "以传染病和儿科健康数据为基础，连接观察性研�
 id = "forecasting"
 title = "传染病预测与模型评价"
 question = "预测模型在不同监测环境下是否可靠？"
-overview = "从多国公共监测数据的基准评价出发，我进一步研究基础模型在儿童医院场景中的适配，关注点预测表现、预测区间和跨院迁移。"
+overview = "先在多国公共监测序列上比较预测模型，再考察基础模型在儿童医院监测数据上的适配与跨院迁移。"
 
 [[themes.works]]
 publication_id = "cai2026tsfm"
@@ -16,7 +16,7 @@ id = "residual-adaptation"
 title = "儿童医院传染病预测的残差适配"
 status = "稿件准备中"
 summary = "研究冻结时序基础模型的局部残差修正与区间估计，通过回顾性评价考察提前一周预测的准确性和可靠性。"
-contribution = "主导预测建模与模型评价。"
+contribution = "比较局部残差修正前后的预测误差，评价预测区间的覆盖率与宽度。"
 
 [[themes]]
 id = "vaccine-studies"
@@ -32,7 +32,7 @@ id = "sex-differences"
 title = "基础免疫阶段的婴儿百日咳性别差异"
 status = "稿件准备中"
 summary = "利用时变接种阶段与交互分析，研究男女婴儿发病率差异随随访阶段的变化，评价观察性关联及其稳健性。"
-contribution = "主导统计分析，包括时变接种阶段建模、交互分析与敏感性分析。"
+contribution = "按接种阶段划分随访人时，估计各阶段男婴相对于女婴的发病率比，并检验性别与接种阶段的交互作用。"
 
 [[themes]]
 id = "pediatric-data"
@@ -44,7 +44,7 @@ overview = "围绕影像、检验、临床文本与问诊对话，研究儿科�
 id = "masters-thesis"
 title = "儿童肺炎的多模态评估"
 status = "硕士学位论文 · 在研"
-summary = "拟融合胸片、检验与临床文本，研究肺炎识别、严重程度分层和病因分类，重点评价模型的判别、校准与缺失模态下的稳健性。"
+summary = "拟依据临床诊断或指南标准确定肺炎标签，融合胸片、血常规与病史文本，研究儿童肺炎识别和严重程度分级，并探索病因分类。"
 
 [[themes.works]]
 publication_id = "cai2026pedialog"

@@ -139,3 +139,6 @@ sup {font-size:.7em;}
   .cv-identity,.research-work,.publication-row {break-inside:avoid;}
   a {text-decoration:none!important;}
 }
+
+.bio-copy ul, .cv-page .prose ul {list-style:disc; padding-inline-start:1.25rem;}
+.bio-copy li + li, .cv-page .prose li + li {margin-top:.45rem;}

@@ -2,4 +2,4 @@ type = "about"
 title = "关于我"
 application = "我正在申请 2027 年秋季入学的统计学博士项目。"
 [profile]
-research_interests = ["传染病预测", "疫苗观察性研究", "儿科健康数据"]
+research_interests = ["儿科医疗数据挖掘", "医学人工智能应用", "传染病统计建模"]

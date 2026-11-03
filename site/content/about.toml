@@ -2,4 +2,4 @@ type = "about"
 title = "About"
 application = "I am seeking PhD opportunities in statistics for Fall 2027."
 [profile]
-research_interests = ["Infectious disease forecasting", "Observational vaccine studies", "Pediatric health data"]
+research_interests = ["Pediatric health data mining", "Medical applications of artificial intelligence", "Statistical modelling of infectious diseases"]

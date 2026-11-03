@@ -6,7 +6,7 @@ description = "Connecting observational studies, forecasting and model evaluatio
 id = "forecasting"
 title = "Infectious disease forecasting"
 question = "How reliable are forecasts across surveillance settings?"
-overview = "My work connects benchmarking on multi-country surveillance data with adaptation to pediatric hospitals, focusing on forecast accuracy, prediction intervals and transfer across hospitals."
+overview = "The multi-country benchmark examines forecast accuracy and interval performance. The hospital study extends this work to local model adaptation and transfer across hospitals."
 
 [[themes.works]]
 publication_id = "cai2026tsfm"
@@ -16,13 +16,13 @@ id = "residual-adaptation"
 title = "Residual adaptation for pediatric hospital forecasting"
 status = "Manuscript in preparation"
 summary = "Studying local residual correction and interval estimation for frozen time series foundation models through retrospective evaluation of one-week-ahead forecasts."
-contribution = "Led forecasting analyses and model evaluation."
+contribution = "Compared forecast errors before and after local residual correction and evaluated prediction interval coverage and width."
 
 [[themes]]
 id = "vaccine-studies"
 title = "Observational vaccine research"
 question = "How do vaccination timing and population differences relate to disease risk?"
-overview = "In collaboration with disease control authorities, I use linked immunisation and surveillance records to study infant pertussis, with an emphasis on vaccination timing, follow-up stages and population heterogeneity."
+overview = "Linked surveillance and immunisation records from Chongqing support analyses of age at first vaccination, dosing intervals and sex differences in infant pertussis incidence."
 
 [[themes.works]]
 publication_id = "cai2026pertussis"
@@ -32,19 +32,19 @@ id = "sex-differences"
 title = "Sex differences in infant pertussis across vaccination stages"
 status = "Manuscript in preparation"
 summary = "Using time-updated vaccination stages and interaction analyses to examine how male–female incidence differences vary during follow-up, with sensitivity analyses of these observational associations."
-contribution = "Led statistical analyses, including time-updated stage modelling, interaction analyses and sensitivity analyses."
+contribution = "Allocated follow-up time by vaccination stage, estimated stage-specific male-to-female incidence rate ratios and tested the interaction between sex and stage."
 
 [[themes]]
 id = "pediatric-data"
 title = "Multimodal and clinical pediatric data"
 question = "How can different forms of pediatric clinical information be organised and evaluated?"
-overview = "I study the organisation, modelling and evaluation of pediatric imaging, laboratory results, clinical text and consultation dialogues."
+overview = "The thesis combines imaging and clinical records for pneumonia assessment. PedDialog examines the quality and training value of annotations in clinical conversations."
 
 [[themes.works]]
 id = "masters-thesis"
 title = "Multimodal assessment of pediatric pneumonia"
 status = "M.S. thesis · Ongoing"
-summary = "Plans to combine chest X-rays, laboratory data and clinical text for pneumonia detection, severity stratification and etiology classification, with evaluation of discrimination, calibration and robustness to missing modalities."
+summary = "The thesis aims to combine chest radiographs, blood counts and clinical histories for pneumonia detection and severity grading, with exploratory analysis of etiological classification. Pneumonia labels will be based on clinical diagnoses or guideline criteria."
 
 [[themes.works]]
 publication_id = "cai2026pedialog"

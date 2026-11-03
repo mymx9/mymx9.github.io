@@ -5,15 +5,15 @@ source = "publications.bib"
 
 [entries.cai2026tsfm]
 research_title = "Multi-country benchmark of time series foundation models"
-summary = "Evaluating zero-shot time series foundation models across infectious disease surveillance series from six countries."
-contribution = "Collected and analysed the data jointly with the other co-first author, and contributed to study design, methodology and the first draft."
+summary = "Compared zero-shot time series foundation models with neural forecasting baselines across forecast horizons and assessed point forecast errors and prediction intervals."
+contribution = "Collected and analysed 289 surveillance series covering more than 70 diseases across six countries with Guoyu Huang. Compared four families of zero-shot foundation models with five neural baselines, holding out the final year of each series. A foundation model achieved the lowest observed error in 30 of 36 comparisons across countries, horizons and error measures."
 
 [entries.cai2026pertussis]
 research_title = "Pertussis vaccination timing and safety"
-summary = "A birth-cohort study of pertussis vaccination initiation, dosing timeliness and safety."
-contribution = "Led the analysis using data provided by collaborating disease control authorities, and contributed to study design, methodology and the first draft."
+summary = "Used a Chongqing birth cohort to compare pertussis incidence among infants starting vaccination at two or three months of age and examined its association with the interval between doses."
+contribution = "Analysed birth-cohort data provided by Chongqing disease control authorities. The cohort linked three citywide sources: the Intelligent Epidemic Prevention and Control System, immunisation records and adverse-event surveillance. Of 76,844 eligible infants, 69,612 entered the effectiveness analysis. Allocated person-time by vaccination stage, compared incidence using Poisson regression and examined inter-dose timing separately."
 
 [entries.cai2026pedialog]
 research_title = "PedDialog: pediatric consultation dialogues"
-summary = "A pediatric consultation dataset with model-generated reasoning annotations reviewed by pediatricians."
-contribution = "Led the analysis and contributed to data curation, software and model development, validation and the first draft."
+summary = "Pairs each physician response in multi-turn caregiver–pediatrician consultations with a model-generated reasoning annotation reviewed by pediatricians."
+contribution = "Helped curate caregiver–pediatrician consultations from a children’s hospital telemedicine service. Assessed de-identification completeness and annotation quality, then compared supervised fine-tuning with and without reasoning annotations."

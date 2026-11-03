@@ -1,9 +1,9 @@
 [site]
 title = "Peng Cai’s Academic Homepage"
 nav_title = "Peng Cai"
-description = "Peng Cai, a master’s student in Applied Statistics at Chongqing Medical University, studying infectious disease forecasting, observational vaccine research and pediatric health data."
+description = "Peng Cai is a master’s student in Applied Statistics at Chongqing Medical University. His research focuses on modelling infectious disease surveillance data and analysing pediatric clinical records."
 favicon = "/favicon.svg"
-last_updated = "November 2, 2026"
+last_updated = "November 3, 2026"
 
 [author]
 name = "Peng Cai"
